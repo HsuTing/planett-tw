@@ -32,7 +32,7 @@ export default class Example extends React.Component {
                     textDecoration: 'initial',
                     color: 'inherit'
                   },
-                  href: '/' + location.pathname + '#' + child.props.title
+                  href: '#' + child.props.title
                 },
                 React.createElement(
                   'h1', {
