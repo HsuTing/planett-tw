@@ -1,19 +1,43 @@
 'use strict';
 
 import React from 'react';
+import Merge from 'merge';
 
+import Style from 'planett-style';
 import Button from 'planett-button';
 import ButtonGroup from 'planett-button-group';
+
+const buttonName = {
+  Circle: 1
+};
 
 class Menu extends React.Component {
   render() {
     return (
       <div>
-        <ButtonGroup>
+        <ButtonGroup default={this.props.location === undefined ?
+                               0 : (
+                                 this.props.location.pathname === '/' ? 
+                                 0 : (
+                                   buttonName[ this.props.location.pathname.replace('/', '') ] === undefined ?
+                                   0 :
+                                   buttonName[ this.props.location.pathname.replace('/', '') ]
+                                 )
+                               )
+                              }
+                     style={{background: 'black'}}
+        >
         {['Button', 'Circle'].map((d, index) => {
           return (
             <Button key={index}
+                    style={{borderRadius: '0px',
+                            border: '3px black solid',
+                            background: 'black',
+                            color: 'white'}}
+                    clickedStyle={{background: 'white',
+                                   color: 'black'}}
                     onClick={this.__click__.bind(this, d)}
+                    inverted
             >{d}</Button>
           );
         })}

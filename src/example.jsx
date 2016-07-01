@@ -17,6 +17,7 @@ export default class Example extends React.Component {
         'div', {
           style: {
             maxWidth: '500px',
+            width: '100%'
           }
         },
         React.Children.map(this.props.children, (child, index) => {
