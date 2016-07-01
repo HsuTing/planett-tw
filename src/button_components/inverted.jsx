@@ -6,10 +6,10 @@ import Button from './../../../planett-button/packages/basic';
 
 export const component = (
   <Button inverted
-  >Basic</Button>
+  >Inverted</Button>
 );
 
 export const str = [
   '<Button inverted',
-  '>Basic</Button>'
+  '>Inverted</Button>'
 ];
