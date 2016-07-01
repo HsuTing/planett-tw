@@ -5,10 +5,11 @@ var ENV = !!(+process.env.NODE_ENV || 0);
 
 module.exports = {
     entry: {
-      button: './src/button',
+      index: './src/index',
       common: [
         './node_modules/react/react.js',
-        './node_modules/react-dom/index.js'
+        './node_modules/react-dom/index.js',
+        './node_modules/react-router/lib/index.js'
       ]
     },
     output: {

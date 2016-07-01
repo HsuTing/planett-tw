@@ -6,12 +6,12 @@ var common = base + 'common.min.js';
 
 module.exports = { 
   entry: {
-    'button': {
+    'index': {
        path: './base.pug',
        options: {
          context: { path: './dist/button_components/index' },
          js: {
-           index: (base + 'button.min.js'),
+           index: (base + 'index.min.js'),
            common: common
          }
        }   
@@ -19,6 +19,6 @@ module.exports = {
   },  
   output: {
     filename: '[name].html',
-    path: './html'
+    path: './'
   }
 };

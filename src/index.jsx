@@ -3,11 +3,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Page from './button_components/index';
+import Router from './router';
 
 (() => {
   ReactDOM.render(
-    <Page />,
+    <Router />,
     document.getElementById('root')
   );
 })();

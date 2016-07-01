@@ -27,19 +27,8 @@ export default class Example extends React.Component {
                 }
               },
               React.createElement(
-                'a', {
-                  style: {
-                    textDecoration: 'initial',
-                    color: 'inherit'
-                  },
-                  href: '#' + child.props.title
-                },
-                React.createElement(
-                  'h1', {
-                    id: child.props.title
-                  },
-                  child.props.title
-                )
+                'h1', null,
+                child.props.title
               ),
               React.createElement(
                 'h5', {
