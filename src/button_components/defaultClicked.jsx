@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Button from './../../../planett-button/packages/basic';
+import Button from 'planett-button';
 
 export const component = (
   <Button defaultClicked

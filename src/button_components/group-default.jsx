@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import Button from './../../../planett-button/packages/basic';
-import ButtonGroup from './../../../planett-button/packages/group';
+import Button from 'planett-button';
+import ButtonGroup from 'planett-button-group';
 
 export const component = (
   <ButtonGroup default={1}>
