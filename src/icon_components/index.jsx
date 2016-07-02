@@ -9,13 +9,11 @@ import Example from './../example';
 import Code from './../code';
 
 import * as basic from './basic';
-import * as circle from './circle';
-import * as square from './square';
-import * as ChangeEntryColor from './change-entry-color';
-import * as ChangeSectionColor from './change-section-color';
+import * as shape from './shape';
+import * as ChangeColor from './change-color';
 import * as multiple from './multiple';
 
-export default class CirclePage extends React.Component {
+export default class IconPage extends React.Component {
   render() {
     return (
       <Example>
@@ -31,21 +29,13 @@ export default class CirclePage extends React.Component {
              data={basic}
         />
 
-        <div title={'Circle icon'}
-             data={circle}
+        <div title={'Add border'}
+             data={shape}
         />
 
-        <div title={'Square icon'}
-             data={square}
-        />
-
-        <div title={'Change entry color'}
-             data={ChangeEntryColor}
-        />
-
-        <div title={'Change section color'}
+        <div title={'Change color'}
              subtitle={'Because `icon` is `svg`, you need to use `fill` to change color.'}
-             data={ChangeSectionColor}
+             data={ChangeColor}
         />
 
         <div title={'Multiple icon'}

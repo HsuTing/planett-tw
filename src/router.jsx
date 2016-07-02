@@ -7,6 +7,7 @@ import Menu from './menu';
 import Button from './button_components/index';
 import Circle from './circle_components/index';
 import Icon from './icon_components/index';
+import Img from './img_components/index';
 
 export default class Root extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class Root extends React.Component {
           <IndexRoute component={ Button } />
           <Route path='Circle' component={ Circle }/>
           <Route path='Icon' component={ Icon }/>
+          <Route path='Img' component={ Img }/>
           <Route path='*' component={ Button }/>
         </Route>
       </Router>
