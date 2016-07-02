@@ -44,7 +44,7 @@ export default class ButtonPage extends React.Component {
         />
 
         <div title={'Control clicked'}
-             subtitle={'You can set \'clicked\' by yourself, but you must give a function \'onClick\'. Otherwise, you must use \'defaultClicked\'.'}
+             subtitle={'You can set `clicked` by yourself, but you must give a function `onClick`. Otherwise, you must use `defaultClicked`.'}
              data={clicked}
         />
 
@@ -57,7 +57,7 @@ export default class ButtonPage extends React.Component {
         />
 
         <div title={'Default group clicked'}
-             subtitle={'\'default\' must be an integer. The buttons of \'group\' are an array. As a result, \'default\' starts from \'0\'.'}
+             subtitle={'`default` must be an integer. The buttons of `group` are an array. As a result, `default` starts from `0`.'}
              data={groupDefault}
         />
       </Example>

@@ -1,6 +1,8 @@
 'use strict';
 
 import React from 'react';
+import Merge from 'merge';
+
 import Code from './code';
 
 export default class Example extends React.Component {
@@ -22,11 +24,16 @@ export default class Example extends React.Component {
         },
         React.Children.map(this.props.children, (child, index) => {
           if(child.type === 'div') {
-            return React.cloneElement(child, {
+            const props = Merge({}, child.props);
+            delete props.subtitle;
+            delete props.title;
+            delete props.data;
+
+            return React.createElement('div', Merge(props, {
                 style: {
                   margin: '20px 0px'
                 }
-              },
+              }),
               React.createElement(
                 'h1', null,
                 child.props.title
@@ -37,8 +44,8 @@ export default class Example extends React.Component {
                     lineHeight: '30px'
                   }
                 },
-                React.Children.map(this.__parse_subtitle__(child.props.subtitle), (child, index) => {
-                  return child; 
+                React.Children.map(this.__parse_subtitle__(child.props.subtitle), (child) => {
+                  return child;
                 })
               ),
               child.props.data.component,
@@ -71,7 +78,7 @@ export default class Example extends React.Component {
 
   __parse_subtitle__(text) {
     if(text !== undefined) {
-      return text.split('\'').map((subtext, index) => {
+      return text.split('`').map((subtext, index) => {
         if(index % 2 === 1) {
           return React.createElement(
             'code', {

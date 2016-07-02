@@ -20,6 +20,7 @@ export default class CirclePage extends React.Component {
         <h1>Example</h1>
 
         <div title={'Basic'}
+             subtitle={'`value` is needed.'}
              data={basic}
         />
 

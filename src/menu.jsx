@@ -8,7 +8,9 @@ import Button from 'planett-button';
 import ButtonGroup from 'planett-button-group';
 
 const buttonName = {
-  Circle: 1
+  Button: 0,
+  Circle: 1,
+  Icon: 2
 };
 
 class Menu extends React.Component {
@@ -27,7 +29,7 @@ class Menu extends React.Component {
                               }
                      style={{background: 'black'}}
         >
-        {['Button', 'Circle'].map((d, index) => {
+        {Object.keys(buttonName).map((d, index) => {
           return (
             <Button key={index}
                     style={{borderRadius: '0px',
