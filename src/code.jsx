@@ -10,7 +10,7 @@ export default class Code extends React.Component {
                    padding: '20px',
                    background: '#eee'}}
       >
-        <code>
+        <code style={{wordSpacing: '2.5px'}}>
           {this.props.data.map((d, i) => {
             return (
               <span key={i}
