@@ -7,13 +7,11 @@ import Planett from 'planett-icon-planett';
 
 export const component = (
   <div>
-    <Input style={{marginBottom: '20px'}}>
+    <Input style={{border: '1px solid #eee'}}>
       <h4 style={{color: 'red'}}
           title
       >Title</h4>
-    </Input>
 
-    <Input style={{border: '1px solid #eee'}}>
       <Planett style={{fill: 'blue'}}
                icon
       />
@@ -22,14 +20,11 @@ export const component = (
 );
 
 export const str = [
-  '<Input>',
+  '<Input style={{border: \'1px solid #eee\'}}>',
   '  <h4 style={{color: \'red\'}}',
   '      title',
   '  >Title</h4>',
-  '</Input>',
   '',
-  '',
-  '<Input style={{border: \'1px solid #eee\'}}>',
   '  <Planett style={{fill: \'blue\'}}',
   '           icon',
   '  />',

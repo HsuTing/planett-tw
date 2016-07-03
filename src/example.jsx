@@ -85,13 +85,19 @@ export default class Example extends React.Component {
               style: {
                 background: '#eee',
                 padding: '0.2em 0.5em'
+              },
+              dangerouslySetInnerHTML: {
+                __html: subtext
               }
-            },
-            subtext
+            }
           );
         }
 
-        return subtext;
+        return React.createElement('span', {
+          dangerouslySetInnerHTML: {
+            __html: subtext
+          }
+        });
       });
     }
 
