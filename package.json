@@ -41,6 +41,7 @@
     "planett-input": "^1.0.7",
     "planett-layout": "^1.0.12",
     "planett-style": "^1.0.1",
+    "planett-table": "^1.0.4",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "react-html-render": "^1.0.3",

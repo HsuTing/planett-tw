@@ -12,7 +12,7 @@ import * as basic from './basic';
 import * as changeTotal from './change-total';
 import * as layout from './layout';
 
-export default class IconPage extends React.Component {
+export default class LayoutPage extends React.Component {
   render() {
     return (
       <Example>
