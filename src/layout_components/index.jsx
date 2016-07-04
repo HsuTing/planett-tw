@@ -2,9 +2,6 @@
 
 import React from 'react';
 
-import Planett from 'planett-icon-planett';
-import Place from 'planett-icon-the-place';
-
 import Example from './../example';
 import Code from './../code';
 
@@ -17,8 +14,6 @@ export default class LayoutPage extends React.Component {
     return (
       <Example>
         <h1>Install</h1>
-        <h5>{'- Install grid, cell'}</h5>
-        <Code data={['npm install planett-grid planett-cell --save']} />
         <h5>{'- Install layout'}</h5>
         <Code data={['npm install planett-layout --save']} />
         <br/><br/><br/>

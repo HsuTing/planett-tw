@@ -2,21 +2,22 @@
 
 import React from 'react';
 
-import Button from 'planett-button';
-import ButtonGroup from 'planett-button-group';
+import {Button, Group} from 'planett-button';
 
 export const component = (
-  <ButtonGroup>
+  <Group>
     <Button>Buuton1</Button>
     <Button>Buuton2</Button>
     <Button>Buuton3</Button>
-  </ButtonGroup>
+  </Group>
 );
 
 export const str = [
-  '<ButtonGroup>',
+  'import {Button, Group} from \'planett-button\';',
+  '',
+  '<Group>',
   '  <Button>Buuton1</Button>',
   '  <Button>Buuton2</Button>',
   '  <Button>Buuton3</Button>',
-  '</ButtonGroup>'
+  '</Group>'
 ];

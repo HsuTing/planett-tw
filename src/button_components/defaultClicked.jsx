@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Button from 'planett-button';
+import {Button} from 'planett-button';
 
 export const component = (
   <Button defaultClicked
@@ -10,6 +10,8 @@ export const component = (
 );
 
 export const str = [
+  'import {Button} from \'planett-button\';',
+  '',
   '<Button defaultClicked',
   '>Default clicked</Button>'
 ];

@@ -12,6 +12,8 @@ export const component = (
 );
 
 export const str = [
+  'import Img from \'planett-img\';',
+  '',
   '<Img src={\'./public/favicons/favicon-96x96.png\'}',
   '     href={\'https://www.google.com.tw\'}',
   '     target={\'_blank\'}',

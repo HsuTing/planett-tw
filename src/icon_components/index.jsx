@@ -2,9 +2,6 @@
 
 import React from 'react';
 
-import Planett from 'planett-icon-planett';
-import Place from 'planett-icon-the-place';
-
 import Example from './../example';
 import Code from './../code';
 
@@ -22,10 +19,10 @@ export default class IconPage extends React.Component {
         <Code data={['npm install planett-icon --save']} />
         <br/><br/><br/>
 
-        <h1>Example</h1>
+        <h1 style={{margin: '0px'}}>Example</h1>
+        <h6>Icon is a `svg` and every icon is a `g`. As a result, you need to control them like `svg` and `g`.</h6>
 
         <div title={'Basic'}
-             subtitle={'`Planett` components is just an example. You can use other icons at `icon list` or use your icon. The type of `icons` is recommended to be a `svg`, and it will be given a `defaultColor` in `this.props.style`.'}
              data={basic}
         />
 
@@ -34,23 +31,12 @@ export default class IconPage extends React.Component {
         />
 
         <div title={'Change color'}
-             subtitle={'Because `icon` is `svg`, you need to use `fill` to change color.'}
              data={ChangeColor}
         />
 
         <div title={'Multiple icon'}
              data={multiple}
         />
-
-        <h1>Icon list</h1>
-
-        <h5>{'- Planett'}</h5>
-        <Planett style={{fill: 'black'}}/>
-        <Code data={['npm install planett-icon-planett --save']} />
-
-        <h5>{'- Place'}</h5>
-        <Place style={{fill: 'black'}}/>
-        <Code data={['npm install planett-icon-the-place --save']} />
       </Example>
     );
   }

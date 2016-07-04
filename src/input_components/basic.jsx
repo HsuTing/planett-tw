@@ -9,5 +9,7 @@ export const component = (
 );
 
 export const str = [
+  'import Input from \'planett-input\';',
+  '',
   '<Input />'
 ];

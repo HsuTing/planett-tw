@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Layout from 'planett-layout';
+import {Layout} from 'planett-layout';
 
 class Example extends React.Component {
   componentDidMount() {
@@ -27,6 +27,8 @@ export const component = (
 );
 
 export const str = [
+  'import {Layout} from \'planett-layout\';',
+  '',
   'class Example extends React.Component {',
   '  componentDidMount() {',
   '    Layout.run(() => {',

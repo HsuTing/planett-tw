@@ -2,17 +2,18 @@
 
 import React from 'react';
 
-import Icon from 'planett-icon';
-import Planett from 'planett-icon-planett';
+import {Icon, Search} from 'planett-icon';
 
 export const component = (
   <Icon>
-    <Planett />
+    <Search />
   </Icon>
 );
 
 export const str = [
+  'import {Icon, Search} from \'planett-icon\';',
+  '',
   '<Icon>',
-  '  <Planett />',
+  '  <Search />',
   '</Icon>'
 ];

@@ -20,6 +20,8 @@ export const component = (
 );
 
 export const str = [
+  'import Input from \'planett-input\';',
+  '',
   '<Input>',
   '  <h4 title>Title</h4>',
   '</Input>',

@@ -2,42 +2,43 @@
 
 import React from 'react';
 
-import Icon from 'planett-icon';
-import Planett from 'planett-icon-planett';
+import {Icon, Search} from 'planett-icon';
 
 export const component = (
   <div style={{width: '100%',
-               height: '60px'}}
+               height: '30px'}}
   >
-    <Icon style={{color: 'red',
+    <Icon style={{borderColor: 'red',
                   marginRight: '10px',
                   float: 'left'}}
           shape={'circle'}
     >
-      <Planett />
+      <Search />
     </Icon>
 
-    <Icon style={{color: 'red',
+    <Icon style={{borderColor: 'red',
                   marginRight: '10px',
                   float: 'left'}}
           shape={'circle'}
     >
-      <Planett style={{fill: 'blue'}}/>
+      <Search style={{fill: 'blue'}}/>
     </Icon>
   </div>
 );
 
 export const str = [
-  '<Icon style={{color: \'red\'}}',
+  'import {Icon, Search} from \'planett-icon\';',
+  '',
+  '<Icon style={{borderColor: \'red\'}}',
   '      shape={\'circle\'}',
   '>',
-  '  <Planett />',
+  '  <Search />',
   '</Icon>',
   '',
   '',
-  '<Icon style={{color: \'red\'}}',
+  '<Icon style={{borderColor: \'red\'}}',
   '      shape={\'circle\'}',
   '>',
-  '  <Planett style={{fill: \'blue\'}}/>',
+  '  <Search style={{fill: \'blue\'}}/>',
   '</Icon>'
 ];

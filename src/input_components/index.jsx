@@ -8,7 +8,6 @@ import Code from './../code';
 import * as basic from './basic';
 import * as title from './title';
 import * as icon from './icon';
-import * as changeStyle from './change-style';
 
 export default class InputPage extends React.Component {
   render() {
@@ -33,10 +32,6 @@ export default class InputPage extends React.Component {
         <div title={'Add icon'}
              subtitle={'Add `icon` to children component. Only one component will be set as `icon`. You can also set `left` or `right` in `props`. `default` will set `left`.'}
              data={icon}
-        />
-
-        <div title={'Change style'}
-             data={changeStyle}
         />
       </Example>
     );

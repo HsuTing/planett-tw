@@ -2,9 +2,6 @@
 
 import React from 'react';
 
-import Planett from 'planett-icon-planett';
-import Place from 'planett-icon-the-place';
-
 import Example from './../example';
 import Code from './../code';
 

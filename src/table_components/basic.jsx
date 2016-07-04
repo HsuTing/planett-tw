@@ -33,6 +33,8 @@ export const component = (
 );
 
 export const str = [
+  'import Table from \'planett-table\';',
+  '',
   '<Table>',
   '  <thead>',
   '    <tr>',

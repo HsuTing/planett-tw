@@ -2,32 +2,24 @@
 
 import React from 'react';
 
-import Icon from 'planett-icon';
-import Planett from 'planett-icon-planett';
-import Place from 'planett-icon-the-place';
+import {Icon, Search, KeyboardArrowDown} from 'planett-icon';
 
 export const component = (
   <Icon shape={'square'}>
-    <Planett style={{position: 'relative',
-                     top: 'calc(-50px / 4)',
-                     left: 'calc(50px / 4)'}}
-    />
-    <Place style={{position: 'relative',
-                   top: 'calc(-100% + 50px / 4)',
-                   left: 'calc(-50px / 4)'}}
+    <Search />
+    <KeyboardArrowDown transform={'translate(0, 9)'}
+                       style={{fill: 'red'}}
     />
   </Icon>
 );
 
 export const str = [
-  '<Icon>',
-  '  <Planett style={{position: \'relative\',',
-  '                   top: \'calc(-50px / 4)\',',
-  '                   left: \'calc(50px / 4)\'}}',
-  '  />',
-  '  <Place style={{position: \'relative\',',
-  '                 top: \'calc(-100% + 50px / 4)\',',
-  '                 left: \'calc(-50px / 4)\'}}',
+  'import {Icon, Search, KeyboardArrowDown} from \'planett-icon\';',
+  '',
+  '<Icon shape={\'square\'}>',
+  '  <Search />',
+  '  <KeyboardArrowDown transform={\'translate(0, 9)\'}',
+  '                     style={{fill: \'red\'}}',
   '  />',
   '</Icon>'
 ];

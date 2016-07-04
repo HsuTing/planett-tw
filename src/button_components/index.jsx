@@ -21,8 +21,6 @@ export default class ButtonPage extends React.Component {
         <h1>Install</h1>
         <h5>{'- Install button'}</h5>
         <Code data={['npm install planett-button --save']} />
-        <h5>{'- Install button group'}</h5>
-        <Code data={['npm install planett-button-group --save']} />
         <br/><br/><br/>
 
         <h1>Example</h1>

@@ -2,8 +2,7 @@
 
 import React from 'react';
 
-import Icon from 'planett-icon';
-import Planett from 'planett-icon-planett';
+import {Icon, Search} from 'planett-icon';
 
 export const component = (
   <div style={{width: '100%',
@@ -13,25 +12,27 @@ export const component = (
           style={{marginRight: '10px',
                   float: 'left'}}
     >
-      <Planett />
+      <Search />
     </Icon>
 
     <Icon shape={'square'}
           style={{marginRight: '10px',
                   float: 'left'}}
     >
-      <Planett />
+      <Search />
     </Icon>
   </div>
 );
 
 export const str = [
+  'mport {Icon, Search} from \'planett-icon\';',
+  '',
   '<Icon shape={\'circle\'}>',
-  '  <Planett />',
+  '  <Search />',
   '</Icon>',
   '',
   '',
   '<Icon shape={\'square\'}>',
-  '  <Planett />',
+  '  <Search />',
   '</Icon>'
 ];

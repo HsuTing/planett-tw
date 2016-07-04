@@ -4,8 +4,7 @@ import React from 'react';
 import Merge from 'merge';
 
 import Style from 'planett-style';
-import Button from 'planett-button';
-import ButtonGroup from 'planett-button-group';
+import {Button, Group} from 'planett-button';
 
 const buttonName = {
   Button: 0,
@@ -21,7 +20,7 @@ class Menu extends React.Component {
   render() {
     return (
       <div>
-        <ButtonGroup default={this.props.location === undefined ?
+        <Group default={this.props.location === undefined ?
                                0 : (
                                  this.props.location.pathname === '/' ? 
                                  0 : (
@@ -47,7 +46,7 @@ class Menu extends React.Component {
             >{d}</Button>
           );
         })}
-        </ButtonGroup>
+        </Group>
 
         {this.props.children}
       </div>

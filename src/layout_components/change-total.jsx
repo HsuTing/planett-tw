@@ -2,8 +2,7 @@
 
 import React from 'react';
 
-import Grid from 'planett-grid';
-import Cell from 'planett-cell';
+import {Grid, Cell} from 'planett-layout';
 
 const style = {
   height: '50px',
@@ -41,6 +40,8 @@ export const component = (
 );
 
 export const str = [
+  'import {Grid, Cell} from \'planett-layout\';',
+  '',
   '<Grid>',
   '  <Cell col={4}>4</Cell>',
   '  <Cell col={4}>4</Cell>',

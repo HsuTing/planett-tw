@@ -9,5 +9,7 @@ export const component = (
 );
 
 export const str = [
+  'import Circle from \'planett-circle\';',
+  '',
   '<Circle value={70}/>'
 ];

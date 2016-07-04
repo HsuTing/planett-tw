@@ -62,12 +62,25 @@ export default class Example extends React.Component {
 
           if(child.type === 'h1') {
             return React.cloneElement(child, {
-              style: {
+              style: Merge({
                 borderBottom: '1px solid #ddd',
                 paddingBottom: '10px',
                 marginBottom: '50px'
-              }
+              }, child.props.style)
             });
+          }
+
+          if(child.type === 'h6') {
+            return React.cloneElement(child, {
+                style: {
+                  paddingBottom: '10px',
+                  marginBottom: '50px'
+                }
+              },
+              React.Children.map(this.__parse_subtitle__(child.props.children), (child) => {
+                return child;
+              })
+            );
           }
 
           return child;
