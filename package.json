@@ -30,7 +30,6 @@
     "babel-preset-react": "^6.11.1",
     "merge": "^1.2.0",
     "planett-button": "^1.1.0",
-    "planett-button-group": "^1.0.7",
     "planett-circle": "^1.1.0",
     "planett-icon": "^1.1.2",
     "planett-img": "^1.1.0",
