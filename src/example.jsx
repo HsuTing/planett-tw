@@ -23,11 +23,12 @@ export default class Example extends React.Component {
           }
         },
         React.Children.map(this.props.children, (child, index) => {
-          if(child.type === 'div') {
+          if(child.type === 'div' && child.props.notExample !== true) {
             const props = Merge({}, child.props);
             delete props.subtitle;
             delete props.title;
             delete props.data;
+            delete props.code;
 
             return React.createElement('div', Merge(props, {
                 style: {
@@ -51,7 +52,8 @@ export default class Example extends React.Component {
               child.props.data.component,
               React.createElement(
                 Code, {
-                  data: child.props.data.str
+                  data: child.props.data.str,
+                  style: child.props.code !== undefined ? child.props.code : {}
                 }
               ),
               <br/>,
@@ -79,6 +81,43 @@ export default class Example extends React.Component {
               },
               React.Children.map(this.__parse_subtitle__(child.props.children), (child) => {
                 return child;
+              })
+            );
+          }
+
+          if(child.props.notExample) {
+            let props = Merge({}, child.props);
+            delete props.notExample;
+
+            return React.createElement('div', props,
+              React.Children.map(child.props.children, (child) => {
+                return React.createElement('div', {
+                    style: {
+                      width: '150px',
+                      height: '150px',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                      float: 'left'
+                    }
+                  },
+                  React.createElement('div', null,
+                    React.createElement('div', {
+                      style: {
+                        width: '150px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        margin: '15px 0px'
+                      }
+                    }, child),
+                    React.createElement('div', {
+                      style: {
+                        width: '150px',
+                        textAlign: 'center'
+                      }
+                    }, child.props.name)
+                  )
+                )
               })
             );
           }

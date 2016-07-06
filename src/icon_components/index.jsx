@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import * as Icon from 'planett-icon';
+
 import Example from './../example';
 import Code from './../code';
 
@@ -37,6 +39,12 @@ export default class IconPage extends React.Component {
         <div title={'Multiple icon'}
              data={multiple}
         />
+
+        <h1 style={{margin: '0px'}}>{'Icon list'}</h1>
+        <div notExample>
+          <Icon.Icon name={'Search'}><Icon.Search /></Icon.Icon>
+          <Icon.Icon name={'KeyboardArrowDown'}><Icon.KeyboardArrowDown /></Icon.Icon>
+        </div>
       </Example>
     );
   }

@@ -13,7 +13,8 @@ const buttonName = {
   Img: 3,
   Input: 4,
   Layout: 5,
-  Table: 6
+  Table: 6,
+  Select: 7
 };
 
 class Menu extends React.Component {

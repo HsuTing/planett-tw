@@ -11,6 +11,7 @@ import Img from './img_components/index';
 import Input from './input_components/index';
 import Layout from './layout_components/index';
 import Table from './table_components/index';
+import Select from './select_components/index';
 
 export default class Root extends React.Component {
   render() {
@@ -24,6 +25,7 @@ export default class Root extends React.Component {
           <Route path='Input' component={ Input }/>
           <Route path='Layout' component={ Layout }/>
           <Route path='Table' component={ Table }/>
+          <Route path='Select' component={ Select }/>
           <Route path='*' component={ Button }/>
         </Route>
       </Router>
