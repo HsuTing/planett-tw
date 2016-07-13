@@ -1,7 +1,7 @@
 var path = require('path');
 
 var ENV = !!(+process.env.NODE_ENV || 0);
-var base = ENV ? '/public/js/' : '/develop/planett-tw.github.io/public/js/';
+var base = ENV ? '/public/js/' : '/planett-tw.github.io/public/js/';
 var common = base + 'common.min.js';
 
 module.exports = { 

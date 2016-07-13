@@ -26,6 +26,7 @@ export const component = (
 
 export const str = [
   'import Select from \'planett-select\';',
+  'import {Icon, KeyboardArrowDown} from \'planett-icon\';',
   '',
   'const defaultSelect = (',
   '  <div>',

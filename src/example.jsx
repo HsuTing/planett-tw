@@ -18,7 +18,7 @@ export default class Example extends React.Component {
       React.createElement(
         'div', {
           style: {
-            maxWidth: '500px',
+            maxWidth: '700px',
             width: '100%'
           }
         },
@@ -93,8 +93,8 @@ export default class Example extends React.Component {
               React.Children.map(child.props.children, (child) => {
                 return React.createElement('div', {
                     style: {
-                      width: '150px',
-                      height: '150px',
+                      width: '110px',
+                      height: '110px',
                       display: 'flex',
                       justifyContent: 'center',
                       flexDirection: 'column',
@@ -104,7 +104,7 @@ export default class Example extends React.Component {
                   React.createElement('div', null,
                     React.createElement('div', {
                       style: {
-                        width: '150px',
+                        width: '10%x',
                         display: 'flex',
                         justifyContent: 'center',
                         margin: '15px 0px'
@@ -112,8 +112,9 @@ export default class Example extends React.Component {
                     }, child),
                     React.createElement('div', {
                       style: {
-                        width: '150px',
-                        textAlign: 'center'
+                        width: '100%',
+                        textAlign: 'center',
+                        fontSize: '8px'
                       }
                     }, child.props.name)
                   )

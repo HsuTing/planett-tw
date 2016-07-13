@@ -11,7 +11,7 @@ import * as addIcon from './add-icon';
 import * as change from './change';
 import * as show from './show';
 
-export default class TablePage extends React.Component {
+export default class SelectPage extends React.Component {
   render() {
     return (
       <Example>

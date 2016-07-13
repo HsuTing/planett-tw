@@ -12,6 +12,12 @@ import * as shape from './shape';
 import * as ChangeColor from './change-color';
 import * as multiple from './multiple';
 
+const listTitle = {
+  margin: '60px 0px 0px',
+  width: '100%',
+  float: 'left'
+};
+
 export default class IconPage extends React.Component {
   render() {
     return (
@@ -19,6 +25,7 @@ export default class IconPage extends React.Component {
         <h1>Install</h1>
         <h5>{'- Install icon'}</h5>
         <Code data={['npm install planett-icon --save']} />
+        <h6>{'Most icons are from <a href=\'https://design.google.com/icons/\' target=\'_blank\'>Material icons</a>'}</h6>
         <br/><br/><br/>
 
         <h1 style={{margin: '0px'}}>Example</h1>
@@ -44,6 +51,25 @@ export default class IconPage extends React.Component {
         <div notExample>
           <Icon.Icon name={'Search'}><Icon.Search /></Icon.Icon>
           <Icon.Icon name={'KeyboardArrowDown'}><Icon.KeyboardArrowDown /></Icon.Icon>
+        </div>
+
+        <p style={listTitle}>{'- Editor'}</p>
+        <div notExample>
+          <Icon.Icon name={'InsertLink'}><Icon.InsertLink /></Icon.Icon>
+          <Icon.Icon name={'FormatQuote'}><Icon.FormatQuote /></Icon.Icon>
+          <Icon.Icon name={'FormatIndentIncrease'}><Icon.FormatIndentIncrease /></Icon.Icon>
+          <Icon.Icon name={'FormatIndentDecrease'}><Icon.FormatIndentDecrease /></Icon.Icon>
+          <Icon.Icon name={'FormatBold'}><Icon.FormatBold /></Icon.Icon>
+          <Icon.Icon name={'FormatAlignCenter'}><Icon.FormatAlignCenter /></Icon.Icon>
+          <Icon.Icon name={'FormatAlignLeft'}><Icon.FormatAlignLeft /></Icon.Icon>
+          <Icon.Icon name={'FormatAlignRight'}><Icon.FormatAlignRight /></Icon.Icon>
+          <Icon.Icon name={'FormatH1'}><Icon.FormatH1 /></Icon.Icon>
+          <Icon.Icon name={'FormatH2'}><Icon.FormatH2 /></Icon.Icon>
+        </div>
+
+        <p style={listTitle}>{'- Navigation'}</p>
+        <div notExample>
+          <Icon.Icon name={'Close'}><Icon.Close /></Icon.Icon>
         </div>
       </Example>
     );
