@@ -27,7 +27,7 @@ export default class SelectPage extends React.Component {
         />
 
         <div title={'Default value'}
-             subtitle={'`defaultValue` also can be a react component. If you use a component, you need to add `data` to your component.'}
+             subtitle={'`defaultValue` also can be a react component. If you use a component, you need to add `data` to your component. You can also use `value` to change the value after `componentDidMount` worked.'}
              data={defaultValue}
         />
 
