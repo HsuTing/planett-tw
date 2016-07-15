@@ -15,7 +15,8 @@ const buttonName = {
   Layout: 5,
   Table: 6,
   Select: 7,
-  Card: 8
+  Card: 8,
+  Checkbox: 9
 };
 
 class Menu extends React.Component {
