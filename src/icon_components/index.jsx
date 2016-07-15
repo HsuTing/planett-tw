@@ -50,7 +50,14 @@ export default class IconPage extends React.Component {
         <h1 style={{margin: '0px'}}>{'Icon list'}</h1>
         <div notExample>
           <Icon.Icon name={'Search'}><Icon.Search /></Icon.Icon>
+        </div>
+
+        <p style={listTitle}>{'- Hardware'}</p>
+        <div notExample>
           <Icon.Icon name={'KeyboardArrowDown'}><Icon.KeyboardArrowDown /></Icon.Icon>
+          <Icon.Icon name={'KeyboardArrowLeft'}><Icon.KeyboardArrowLeft /></Icon.Icon>
+          <Icon.Icon name={'KeyboardArrowRight'}><Icon.KeyboardArrowRight /></Icon.Icon>
+          <Icon.Icon name={'KeyboardArrowUp'}><Icon.KeyboardArrowUp /></Icon.Icon>
         </div>
 
         <p style={listTitle}>{'- Editor'}</p>
