@@ -29,6 +29,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "merge": "^1.2.0",
+    "planett-accordion": "^1.0.3",
     "planett-button": "^1.1.1",
     "planett-card": "^1.0.0",
     "planett-checkbox": "^1.0.4",

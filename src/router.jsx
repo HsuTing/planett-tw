@@ -14,6 +14,7 @@ import Table from './table_components/index';
 import Select from './select_components/index';
 import Card from './card_components/index';
 import Checkbox from './checkbox_components/index';
+import Accordion from './accordion_components/index';
 
 export default class Root extends React.Component {
   render() {
@@ -30,6 +31,7 @@ export default class Root extends React.Component {
           <Route path='Select' component={ Select }/>
           <Route path='Card' component={ Card }/>
           <Route path='Checkbox' component={ Checkbox }/>
+          <Route path='Accordion' component={ Accordion }/>
           <Route path='*' component={ Button }/>
         </Route>
       </Router>
