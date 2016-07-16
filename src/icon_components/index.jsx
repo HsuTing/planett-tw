@@ -48,6 +48,7 @@ export default class IconPage extends React.Component {
         />
 
         <h1 style={{margin: '0px'}}>{'Icon list'}</h1>
+        <p style={listTitle}>{'- Action'}</p>
         <div notExample>
           <Icon.Icon name={'Search'}><Icon.Search /></Icon.Icon>
         </div>
@@ -77,6 +78,11 @@ export default class IconPage extends React.Component {
         <p style={listTitle}>{'- Navigation'}</p>
         <div notExample>
           <Icon.Icon name={'Close'}><Icon.Close /></Icon.Icon>
+        </div>
+
+        <p style={listTitle}>{'- Content'}</p>
+        <div notExample>
+          <Icon.Icon name={'Add'}><Icon.Add /></Icon.Icon>
         </div>
       </Example>
     );
