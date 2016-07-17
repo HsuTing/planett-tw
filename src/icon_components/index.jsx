@@ -78,6 +78,7 @@ export default class IconPage extends React.Component {
         <p style={listTitle}>{'- Navigation'}</p>
         <div notExample>
           <Icon.Icon name={'Close'}><Icon.Close /></Icon.Icon>
+          <Icon.Icon name={'Menu'}><Icon.Menu /></Icon.Icon>
         </div>
 
         <p style={listTitle}>{'- Content'}</p>
