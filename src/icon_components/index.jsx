@@ -85,6 +85,20 @@ export default class IconPage extends React.Component {
         <div notExample>
           <Icon.Icon name={'Add'}><Icon.Add /></Icon.Icon>
         </div>
+
+        <p style={listTitle}>{'- Brand'}</p>
+        <div notExample>
+          <Icon.Icon name={'Facebook'}><Icon.Facebook /></Icon.Icon>
+          <Icon.Icon name={'FacebookOutline'}><Icon.FacebookOutline /></Icon.Icon>
+          <Icon.Icon name={'YoutubeOutline'}><Icon.YoutubeOutline /></Icon.Icon>
+        </div>
+
+        <p style={listTitle}>{'- AV'}</p>
+        <div notExample>
+          <Icon.Icon name={'PlayArrow'}><Icon.PlayArrow /></Icon.Icon>
+          <Icon.Icon name={'PlayCircleFilled'}><Icon.PlayCircleFilled /></Icon.Icon>
+          <Icon.Icon name={'PlayCircleOutline'}><Icon.PlayCircleOutline /></Icon.Icon>
+        </div>
       </Example>
     );
   }
