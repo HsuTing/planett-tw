@@ -18,7 +18,7 @@ export const component = (
   >
     <SimpleSlider style={slider}>
       <Img src={'./public/img/img1.jpg'} />
-      <Img src={'./public/img/img2.jpg'} />
+      <Img src={'./public/img/img2.jpg'} onClick={ () => { alert('click'); } }/>
       <Img src={'./public/img/img3.jpg'} href={'https://planett-tw.github.io/'} target={'_blank'} />
     </SimpleSlider>
 
@@ -75,7 +75,7 @@ export const str = [
   '',
   '<SimpleSlider>',
   '  <Img src={\'./public/img/img1.jpg\'} />',
-  '  <Img src={\'./public/img/img2.jpg\'} />',
+  '  <Img src={\'./public/img/img2.jpg\'} onClick={ () => { alert(\'click\'); } } />',
   '  <Img src={\'./public/img/img3.jpg\'} href={\'https://planett-tw.github.io/\'} target={\'_blank\'} />',
   '</SimpleSlider>',
   '',
