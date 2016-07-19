@@ -8,7 +8,7 @@ export const component = (
   <div style={{width: '100%',
                height: '30px'}}
   >
-    <Icon style={{borderColor: 'red',
+    <Icon style={{border: '2px red solid',
                   marginRight: '10px',
                   float: 'left'}}
           shape={'circle'}
@@ -16,7 +16,7 @@ export const component = (
       <Search />
     </Icon>
 
-    <Icon style={{borderColor: 'red',
+    <Icon style={{border: '2px red solid',
                   marginRight: '10px',
                   float: 'left'}}
           shape={'circle'}
