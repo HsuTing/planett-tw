@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/planett-tw/planett-tw.github.io#readme",
   "dependencies": {
-    "babel-cli": "^6.10.1",
+    "babel-cli": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
@@ -35,7 +35,7 @@
     "planett-checkbox": "^1.0.4",
     "planett-circle": "^1.1.0",
     "planett-icon": "^1.1.11",
-    "planett-img": "^1.2.4",
+    "planett-img": "^1.2.6",
     "planett-input": "^1.1.1",
     "planett-layout": "^1.2.1",
     "planett-select": "^1.0.6",
